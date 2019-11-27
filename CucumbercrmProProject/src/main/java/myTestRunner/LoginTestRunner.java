@@ -9,10 +9,14 @@ package myTestRunner;
 
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-			features="F:\\Eclipse_Programs\\CucumbercrmProProject\\src\\main\\java\\features\\login1.feature",
+			features="C:\\Users\\Datta\\git\\CucumberProject\\CucumbercrmProProject\\features\\createNewAccount.feature",
 			glue={"stepDefination"},
-			format={"html:test-outout\\cucumber_report"}
-			//dryRun=false
+			//format={"html:test-outout\\cucumber_report"},
+			dryRun=false,
+			monochrome=false,
+			//format = {"pretty"}
+			//format = {"html:Reports"}
+			plugin = { "pretty", "html:target/cucumber-reports" }
 
 			)
 

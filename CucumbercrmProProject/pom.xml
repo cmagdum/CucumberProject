@@ -65,9 +65,41 @@
 			<version>1.0.5</version>
 			<scope>provided</scope>
 		</dependency>
+<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-reports -->
+<dependency>
+    <groupId>com.github.mkolisnyk</groupId>
+    <artifactId>cucumber-reports</artifactId>
+    <version>0.0.11</version>
+</dependency>
 
     
-  </dependencies>
-  
-  
-</project>
+  <!-- Extent Report Adapter for Cucumber -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports-cucumber4-adapter</artifactId>
+			<version>1.0.7</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.0.9</version>
+		</dependency>
+</dependencies>
+
+<build>
+
+		<plugins>
+			<!-- [[1.]] Plugin to Execute all the test under test folder of Maven 
+				TestNG driver file can also be configured for help: mvn surefire:help -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.14.1</version>
+				<configuration>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>  

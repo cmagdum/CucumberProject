@@ -1,225 +1,244 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("F:/Eclipse_Programs/CucumbercrmProProject/src/main/java/features/login1.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Datta/git/CucumberProject/CucumbercrmProProject/features/createNewAccount.feature");
 formatter.feature({
   "line": 1,
-  "name": "Free crm pro test login",
+  "name": "verify new account creation page is created",
   "description": "",
-  "id": "free-crm-pro-test-login",
+  "id": "verify-new-account-creation-page-is-created",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "line": 4,
-  "name": "Parameter testing with valid credentials (Parameterizing without Example Keyword)",
+formatter.write("beforeMethod............");
+formatter.before({
+  "duration": 7205284254,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 60783,
+  "status": "passed"
+});
+formatter.background({
+  "line": 3,
+  "name": "",
   "description": "",
-  "id": "free-crm-pro-test-login;parameter-testing-with-valid-credentials-(parameterizing-without-example-keyword)",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 3,
-      "name": "@positive"
-    }
-  ]
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 5,
+  "name": "user is already on Login page",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "Open browser As \"Chrome\"",
-  "keyword": "Given "
+  "name": "titile of the login page is \"CRMPRO\"",
+  "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "navigate to url As \"https://www.crmpro.com\"",
-  "keyword": "And "
+  "name": "user enter username as \"Mayuri_257\" and password as \"Mayuri$257\"",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "enter user name As \"Mayuri_257\"",
-  "keyword": "When "
+  "name": "user click on login butten",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 9,
-  "name": "enter password As \"Mayuri$257\"",
+  "name": "titile of the home page is \"CRMPRO\"",
   "keyword": "And "
 });
-formatter.step({
-  "line": 10,
-  "name": "clicked on Login Button",
-  "keyword": "Then "
+formatter.match({
+  "location": "Login1StepDefinantion.user_is_already_on_Login_page()"
 });
-formatter.step({
-  "line": 11,
-  "name": "user shoukd be on home page \"CRMPRO\"",
-  "keyword": "And "
-});
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 16301091408,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.scenarioOutline({
-  "line": 13,
-  "name": ": Test login frm pro with valid credentials (Parameterization with Example Keyword)",
-  "description": "",
-  "id": "free-crm-pro-test-login;:-test-login-frm-pro-with-valid-credentials-(parameterization-with-example-keyword)",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 14,
-  "name": "Open browser As \"\u003cbrowsername\u003e\"",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 15,
-  "name": "navigate to url As \"\u003curl\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "enter user name As \"\u003cUserId\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 17,
-  "name": "enter password As \"\u003cUserPass\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 18,
-  "name": "clicked on Login Button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user shoukd be on home page \"\u003cTitle\u003e\"",
-  "keyword": "And "
-});
-formatter.examples({
-  "line": 21,
-  "name": "",
-  "description": "",
-  "id": "free-crm-pro-test-login;:-test-login-frm-pro-with-valid-credentials-(parameterization-with-example-keyword);",
-  "rows": [
+formatter.match({
+  "arguments": [
     {
-      "cells": [
-        "browsername",
-        "url",
-        "UserId",
-        "UserPass",
-        "wait",
-        "Title"
-      ],
-      "line": 23,
-      "id": "free-crm-pro-test-login;:-test-login-frm-pro-with-valid-credentials-(parameterization-with-example-keyword);;1"
-    },
-    {
-      "cells": [
-        "Chrome",
-        "https://www.crmpro.com",
-        "Mayuri_257",
-        "Mayuri$",
-        "15 seconds",
-        "CRMPRO"
-      ],
-      "line": 24,
-      "id": "free-crm-pro-test-login;:-test-login-frm-pro-with-valid-credentials-(parameterization-with-example-keyword);;2"
+      "val": "CRMPRO",
+      "offset": 29
     }
   ],
-  "keyword": "Examples"
+  "location": "Login1StepDefinantion.titile_of_the_login_page_is(String)"
+});
+formatter.write("Title of the login page is : CRMPRO - CRM software for customer relationship management, sales, and support.");
+formatter.write("verified the login page title ");
+formatter.result({
+  "duration": 46196201,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Mayuri_257",
+      "offset": 24
+    },
+    {
+      "val": "Mayuri$257",
+      "offset": 53
+    }
+  ],
+  "location": "Login1StepDefinantion.user_enter_username_as_and_password_as(String,String)"
+});
+formatter.write("Enter valid username and valid password to the text username and password text feild..");
+formatter.result({
+  "duration": 338265888,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Login1StepDefinantion.user_click_on_login_butten()"
+});
+formatter.write("Click on login btn on login page ...");
+formatter.result({
+  "duration": 12044369893,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "CRMPRO",
+      "offset": 28
+    }
+  ],
+  "location": "Login1StepDefinantion.titile_of_the_home_page_is(String)"
+});
+formatter.write("User should be on home page with title as :CRMPRO");
+formatter.write("Title of the home page is : CRMPRO");
+formatter.write("Title of the homepage is verified ......");
+formatter.result({
+  "duration": 15378743,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 24,
-  "name": ": Test login frm pro with valid credentials (Parameterization with Example Keyword)",
+  "line": 12,
+  "name": "verify new account creation",
   "description": "",
-  "id": "free-crm-pro-test-login;:-test-login-frm-pro-with-valid-credentials-(parameterization-with-example-keyword);;2",
+  "id": "verify-new-account-creation-page-is-created;verify-new-account-creation",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 14,
-  "name": "Open browser As \"Chrome\"",
-  "matchedColumns": [
-    0
-  ],
+  "line": 13,
+  "name": "user should be on home page \"CRMPRO\"",
   "keyword": "Given "
 });
 formatter.step({
+  "line": 14,
+  "name": "verify user name as \"Mayuri Deshmukh\"",
+  "keyword": "When "
+});
+formatter.step({
   "line": 15,
-  "name": "navigate to url As \"https://www.crmpro.com\"",
-  "matchedColumns": [
-    1
-  ],
+  "name": "navigate to new contact page",
   "keyword": "And "
 });
 formatter.step({
   "line": 16,
-  "name": "enter user name As \"Mayuri_257\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "When "
+  "name": "enter firstname as \"Gaurav\"",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 17,
-  "name": "enter password As \"Mayuri$\"",
-  "matchedColumns": [
-    3
-  ],
+  "name": "enetr lastname as \"Pate\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 18,
-  "name": "clicked on Login Button",
-  "keyword": "Then "
+  "name": "enter company name as \"U to Solutions\"",
+  "keyword": "And "
 });
 formatter.step({
   "line": 19,
-  "name": "user shoukd be on home page \"CRMPRO\"",
-  "matchedColumns": [
-    5
+  "name": "click on save button",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "CRMPRO",
+      "offset": 29
+    }
   ],
-  "keyword": "And "
+  "location": "NewAccountStepDef.user_should_be_on_home_page(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 7996525,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "Mayuri Deshmukh",
+      "offset": 21
+    }
+  ],
+  "location": "NewAccountStepDef.verify_user_name_as(String)"
 });
-formatter.match({});
+formatter.write("verify username contains :Mayuri Deshmukh");
+formatter.write("actualUname username from appli :  User: Mayuri Deshmukh");
 formatter.result({
-  "status": "undefined"
+  "duration": 343636615,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "NewAccountStepDef.navigate_to_new_contact_page()"
 });
-formatter.match({});
+formatter.write("navigating to new contact page...");
+formatter.write("navigated to new contact page...");
 formatter.result({
-  "status": "undefined"
+  "duration": 3026353602,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Gaurav",
+      "offset": 20
+    }
+  ],
+  "location": "NewAccountStepDef.enter_firstname_as(String)"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 275821757,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Pate",
+      "offset": 19
+    }
+  ],
+  "location": "NewAccountStepDef.enetr_lastname_as(String)"
+});
+formatter.result({
+  "duration": 139838692,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "U to Solutions",
+      "offset": 23
+    }
+  ],
+  "location": "NewAccountStepDef.enter_company_name_as(String)"
+});
+formatter.result({
+  "duration": 251810300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "NewAccountStepDef.click_on_save_button()"
+});
+formatter.result({
+  "duration": 2801513643,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 1270721308,
+  "status": "passed"
 });
 });
