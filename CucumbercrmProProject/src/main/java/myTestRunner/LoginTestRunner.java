@@ -13,7 +13,7 @@ package myTestRunner;
 			glue={"stepDefination"},
 			//format={"html:test-outout\\cucumber_report"},
 			dryRun=false,
-			monochrome=false,
+			monochrome=true,
 			//format = {"pretty"}
 			//format = {"html:Reports"}
 			plugin = { "pretty", "html:target/cucumber-reports" }
